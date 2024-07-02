@@ -24,10 +24,9 @@
 
 - [Features](#features)
 - [Getting Started](#getting_started)
-- [Deployment](#deployment)
+- [Technologies Used](#technologies_used)
 - [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
+- [SETUP](../TODO.md)
 - [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
@@ -44,55 +43,20 @@
 
 You can view a live demo of the game <a href="https://dice-game-two-beryl.vercel.app/">here</a>.
 
-### Prerequisites
+### Technologies Used
 
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
-
-## 🔧 Running the tests <a name = "tests"></a>
-
-Explain how to run the automated tests for this system.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+| Technology |
+|---|---|
+| HTML |
+| CSS |
+| JavaScript |
 
 ## 🎈 Usage <a name="usage"></a>
 
-Add notes about how to use the system.
+- Click the "Roll" button to roll the dice for both players.
+- The scores for Player A and Player B will be updated based on the result of the dice roll.
+- The first player to reach a score of 5 wins the game.
+- Click the "Reset" button to reset the scores and start a new game.
 
 ## 🚀 Deployment <a name = "deployment"></a>
 
