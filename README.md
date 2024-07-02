@@ -8,9 +8,6 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
 
@@ -23,13 +20,9 @@
 ## 📝 Table of Contents
 
 - [Features](#features)
-- [Getting Started](#getting_started)
+- [Demo](#demo)
 - [Technologies Used](#technologies_used)
 - [Usage](#usage)
-- [SETUP](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
-- [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
 ## 🧐 Features <a name = "features"></a>
 
@@ -43,13 +36,23 @@
 
 You can view a live demo of the game <a href="https://dice-game-two-beryl.vercel.app/">here</a>.
 
-### Technologies Used
+### ⛏️ Technologies Used
 
-| Technology |
-|---|---|
-| HTML |
-| CSS |
-| JavaScript |
+<table>
+  <tr>
+    <th>Technology</th>
+  </tr>
+  <tr>
+    <td>HTML</td>
+  </tr>
+  <tr>
+    <td>CSS</td>
+  </tr>
+  <tr>
+    <td>JavaScript</td>
+  </tr>
+</table>
+
 
 ## 🎈 Usage <a name="usage"></a>
 
@@ -58,19 +61,3 @@ You can view a live demo of the game <a href="https://dice-game-two-beryl.vercel
 - The first player to reach a score of 5 wins the game.
 - Click the "Reset" button to reset the scores and start a new game.
 
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
-
-## ✍️ Authors <a name = "authors"></a>
-
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
-
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
