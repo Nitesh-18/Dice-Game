@@ -6,36 +6,39 @@
   <title>Dice Game</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
-
 </head>
 
 <body>
+  <h1 id="game-status">Let's Play!</h1>
 
-  <div class="container">
-    <h1 id="game-status">Let's Play!</h1>
-
-    <div id="game-winner" style="display: none;">
-      <h2 id="winner-text"></h2>
-    </div>
+  <div class="game-content">
     <div class="dice-container">
       <div class="dice">
-        <p>Player 1</p>
-        <img class="img1" src="./images/dice6.png">
+        <p>Player A</p>
+        <img class="img1" src="./images/dice6.png" alt="Player A Dice">
       </div>
 
       <div class="dice">
-        <p>Player 2</p>
-        <img class="img2" src="./images/dice6.png">
+        <p>Player B</p>
+        <img class="img2" src="./images/dice6.png" alt="Player B Dice">
       </div>
     </div>
 
-    <button id="roll-button">Roll</button>
-    <button id="reset-button">Reset</button>
-
-    <p id="score-player1">Player 1: 0</p>
-    <p id="score-player2">Player 2: 0</p>
-
+    <div class="result-container">
+      <p id="score-playerA">Player A: 0</p>
+      <p id="score-playerB">Player B: 0</p>
+      <div id="game-winner" style="display: none;">
+        <h2 id="winner-text"></h2>
+      </div>
+    </div>
   </div>
+
+  <button id="roll-button">Roll</button>
+  <button id="reset-button">Reset</button>
+
+  <!-- Sound effects -->
+  <audio id="roll-sound" src="sounds/roll.mp3"></audio>
+  <audio id="win-sound" src="sounds/Win.wav"></audio>
 
   <script src="./script.js"></script>
 </body>
