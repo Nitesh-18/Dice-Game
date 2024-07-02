@@ -36,7 +36,8 @@
 
 You can view a live demo of the game <a href="https://dice-game-two-beryl.vercel.app/">here</a>.
 
-### ⛏️ Technologies Used
+### ⛏️ Technologies Used  <a name = "technologies_used"></a>
+
 
 <table>
   <tr>
