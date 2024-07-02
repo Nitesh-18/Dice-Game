@@ -8,37 +8,47 @@ function rollDice() {
   var randomNumber1 = Math.floor(Math.random() * 6) + 1;
   var randomNumber2 = Math.floor(Math.random() * 6) + 1;
 
-  // Update dice images
-  document.querySelector(".img1").setAttribute("src", `./images/dice${randomNumber1}.png`);
-  document.querySelector(".img2").setAttribute("src", `./images/dice${randomNumber2}.png`);
+  // Add rolling class to dice images
+  document.querySelector(".img1").classList.add("rolling");
+  document.querySelector(".img2").classList.add("rolling");
 
-  // Determine the winner of this round
-  if (randomNumber1 > randomNumber2) {
+  setTimeout(() => {
+    document.querySelector(".img1").classList.remove("rolling");
+    document.querySelector(".img2").classList.remove("rolling");
+    
+    // Update dice images
+    document.querySelector(".img1").setAttribute("src", `./images/dice${randomNumber1}.png`);
+    document.querySelector(".img2").setAttribute("src", `./images/dice${randomNumber2}.png`);
+    
+    
+    // Determine the winner of this round
+    if (randomNumber1 > randomNumber2) {
     document.querySelector("h1").textContent = "Player 1 Wins!";
     scorePlayer1++;
   } else if (randomNumber1 < randomNumber2) {
     document.querySelector("h1").textContent = "Player 2 Wins!";
     scorePlayer2++;
-  } else {
+} else {
     document.querySelector("h1").textContent = "It's a Draw!";
-  }
+}
 
-  // Update scores
-  document.querySelector("#score-player1").textContent = `Player 1: ${scorePlayer1}`;
-  document.querySelector("#score-player2").textContent = `Player 2: ${scorePlayer2}`;
+// Update scores
+document.querySelector("#score-player1").textContent = `Player 1: ${scorePlayer1}`;
+document.querySelector("#score-player2").textContent = `Player 2: ${scorePlayer2}`;
 
-  // Check for winning conditions
-  if (scorePlayer1 === 5) {
+// Check for winning conditions
+if (scorePlayer1 === 5) {
     document.querySelector("h1").textContent = "Player 1 Wins the Game!";
     document.querySelector("#roll-button").disabled = true;
     document.querySelector("#game-winner").style.display = "block";
     document.querySelector("#winner-text").textContent = "Player 1";
-  } else if (scorePlayer2 === 5) {
+} else if (scorePlayer2 === 5) {
     document.querySelector("h1").textContent = "Player 2 Wins the Game!";
     document.querySelector("#roll-button").disabled = true;
     document.querySelector("#game-winner").style.display = "block";
     document.querySelector("#winner-text").textContent = "Player 2";
-  }
+}
+}, 1000);
 }
 
 // Add event listener to roll button
