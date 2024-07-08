@@ -13,7 +13,7 @@
 
 ---
 
-<p align="center"> This is a simple web-based dice game inspired by Ludo, where two players (Player A and Player B) roll dice to compete against each other. The game features animations and sound effects for a more immersive experience.
+<p align="center"> This is a simple web-based dice game inspired by Ludo, where two players (Player A and Player B) roll dice in single click to compete against each other. The game features animations and sound effects for a more immersive experience.
     <br> 
 </p>
 
